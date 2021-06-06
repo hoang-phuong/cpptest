@@ -1,7 +1,10 @@
 #include "cpptest.hpp"
 
-int number = 1321;
-void dummy(void)
+using namespace phuong::cpptest;
+
+CppTest& CppTest::getInstance()
 {
-    number++;
+    static CppTest instance;
+
+    return instance;
 }
