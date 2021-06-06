@@ -44,3 +44,6 @@
 
 # Log files
 *.log
+
+# Build output
+**/_out
